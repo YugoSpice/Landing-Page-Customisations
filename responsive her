@@ -1,0 +1,111 @@
+/*================ Font size and width ================*/
+
+@media screen and (max-width: 1200px){
+.mega-title {
+    font-size: 72px;
+    min-width: 600px;
+}
+}
+
+@media screen and (max-width: 992px){
+.mega-title {
+    font-size: 60px;
+    min-width: 350px;
+}
+}
+
+/*================ Text alignment ================*/
+
+@media screen and (max-width: 1200px){
+.hero .mega-subtitle, .hero .mega-title {
+  margin: 0;
+  text-align: left;
+}
+}
+
+@media screen and (max-width: 992px){
+.hero .mega-subtitle, .hero .mega-title {
+  margin: 0;
+  text-align: top;
+}
+}
+
+/*================ Button alignment ================*/
+
+@media screen and (max-width: 1200){
+.hero__btn {
+  float: left;
+  margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 992px){
+.hero__btn {
+  float: top;
+  margin-top: 10px;
+}
+}
+
+
+/*================ Image alignment ================*/
+
+@media only screen and (max-width: 1200px) {
+  .collection-hero__image {
+     background-size: contain;
+     height: 180px !important;}
+
+   .collection-hero {     
+      margin-bottom: 0px;}
+ }
+
+@media only screen and (max-width: 992px) {
+  .collection-hero__image {
+     background-size: contain;
+     height: 180px !important;}
+
+   .collection-hero {     
+      margin-bottom: 0px;}
+ }
+ 
+/*================ Responsive image ================*/
+
+
+
+
+
+<picture class="hero-mobile">
+
+<source srcset="https://images.prismic.io/allplants-cms-prod/a6d726e9-00e5-43f6-aae4-3cf6c0dc7ad6_Homepage-Hero-Mobile-V5.png?auto=compress,format&amp;rect=0,0,1080,660&amp;w=900&amp;h=550">
+
+<img id="hero-image" src="https://images.prismic.io/allplants-cms-prod/3a7f0f27-7ea5-428a-88c0-542e13321d47_Homepage-Hero-Desktop-V5.jpg?auto=compress,format" 
+class="hero-desktop">
+
+</picture>
+
+.hero-mobile {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    line-height: 0;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+}
+
+
+.hero-desktop {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center bottom;
+    z-index: 1;
+    height: 100%;
+    min-height: 200px;
+    width: 100%;
+}
